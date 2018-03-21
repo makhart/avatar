@@ -250,4 +250,3 @@ Please submit bug reports, suggestions and pull requests to the GitHub issue tra
 
 ## Changelog
 Please see [CHANGELOG](https://github.com/makhart/avatar/blob/master/CHANGELOG.md) for more information.
-
