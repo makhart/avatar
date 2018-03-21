@@ -1,0 +1,37 @@
+{
+    "name": "makhart/avatar",
+    "description": "Avatar generator web service",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "avatar",
+        "generator",
+        "retro"
+    ],
+    "authors": [
+        {
+            "name": "Makhart",
+            "email": "makicreative@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/makhart/avatar/issues",
+        "source": "https://github.com/makhart/avatar"
+    },
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Makhart\\Avatar\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Makhart\\Avatar\\Tests\\": "tests/"
+        }
+    }
+}

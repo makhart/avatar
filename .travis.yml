@@ -1,0 +1,23 @@
+language: php
+
+php:
+  - 7.1
+  - 7.2
+
+sudo: false
+
+before_install:
+  - composer self-update
+
+install:
+  - composer require php-coveralls/php-coveralls
+  - composer install --no-interaction --no-suggest
+
+before_script:
+  - mkdir -p build/logs
+
+script:
+  -  vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+
+after_success:
+  - php vendor/bin/php-coveralls -v
